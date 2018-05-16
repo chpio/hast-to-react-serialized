@@ -1,7 +1,11 @@
 import propInfo from 'property-information';
 import unistIs from 'unist-util-is';
 
-export default function hastToReactSerialized(node) {
+export default function rehypeReactSerialized() {
+	this.Compiler = hastToReactSerialized;
+}
+
+export function hastToReactSerialized(node) {
 	if (unistIs('root', node)) {
 		if (node.children.length === 1 && unistIs('element', node.children[0])) {
 			node = node.children[0];
