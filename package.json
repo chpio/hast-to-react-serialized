@@ -15,7 +15,6 @@
     "babel-preset-es2015": "^6.24.1"
   },
   "dependencies": {
-    "property-information": "^3.2.0",
-    "unist-util-is": "^2.1.2"
+    "property-information": "^3.2.0"
   }
 }

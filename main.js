@@ -1,5 +1,4 @@
 import propInfo from 'property-information';
-import unistIs from 'unist-util-is';
 
 export default function rehypeReactSerialized() {
 	this.Compiler = hastToReactSerialized;
@@ -81,4 +80,8 @@ function camelCase(val) {
 		val = `ms-${val.slice(4)}`;
 	}
 	return val.replace(/-([a-z])/g, (_, v) => v.toUpperCase());
+}
+
+function unistIs(type, node) {
+	return node && node.type === type;
 }
