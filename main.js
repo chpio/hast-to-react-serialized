@@ -13,7 +13,7 @@ export function hastToReactSerialized(node) {
 				type: 'element',
 				tagName: 'div',
 				properties: {},
-				children: node.children
+				children: node.children,
 			};
 		}
 	} else if (!unistIs('element', node)) {
@@ -55,7 +55,7 @@ function processNode(node) {
 			if (unistIs('element', child)) {
 				children.push(processNode(child));
 			} else if (unistIs('text', child)) {
-				children.push(value.value);
+				children.push(child.value);
 			}
 		});
 	}
