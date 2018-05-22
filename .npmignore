@@ -1,5 +1,5 @@
 *
 .*
-!main.js
-!main.es5.js
-!main.es5.js.map
+!/main.js
+!/main.cjs.js
+!/main.cjs.js.map
