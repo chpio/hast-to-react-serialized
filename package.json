@@ -1,7 +1,8 @@
 {
   "name": "rehype-react-serialized",
   "version": "0.0.0",
-  "description": "",
+  "description": "Converts rehype into a simple react representation",
+  "keywords": ["react-serialized", "react", "rehype"],
   "main": "main.cjs.js",
   "module": "main.js",
   "author": "",
